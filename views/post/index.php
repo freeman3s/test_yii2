@@ -22,7 +22,7 @@ $test = Yii::$app->user->identity->username;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'uid',
+            'author.username:text:Author',
             'title',
             'anons:ntext',
             'text:ntext',
@@ -30,4 +30,6 @@ $test = Yii::$app->user->identity->username;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+
+</div>
 </div>

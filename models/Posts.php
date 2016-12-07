@@ -2,6 +2,8 @@
 
 namespace app\models;
 
+use Yii;
+
 /**
  * This is the model class for table "posts".
  *
@@ -47,5 +49,13 @@ class Posts extends \yii\db\ActiveRecord
             'anons' => 'Anons',
             'text' => 'Text',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getAuthor()
+    {
+        return $this->hasOne(User::className(), ['id' => 'uid']);
     }
 }

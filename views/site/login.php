@@ -41,7 +41,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php ActiveForm::end(); ?>
 
     <div class="col-lg-offset-1" style="color:#999;">
-        You may login with <strong>admin/admin1</strong>.<br>
+        You may login with <strong>admin/admin1</strong>, <strong>admin2/adminadmin</strong>, <strong>wayid/wayidwayid</strong>.<br>
+        You can also create a new account.<br>
         To modify the username/password, please check out the code <code>app\models\User::$users</code>.
     </div>
 </div>
