@@ -13,7 +13,7 @@ use yii\helpers\ArrayHelper;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'uid')->textInput(['readonly' => true, 'value' => Yii::$app->user->getId()]) ?>
+    <?= $form->field($model, 'uid')->hiddenInput(['value'=> Yii::$app->user->getId()])->label(false) ?>
    	
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
